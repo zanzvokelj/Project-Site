@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <title>Animated Nav With GSAP 3.0</title>
+    <link rel="stylesheet" href="style.css" />
+    <head>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+        rel="stylesheet"
+      />
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+      <div class="logo-banner">
+        <img
+          src="https://scontent.flju2-4.fna.fbcdn.net/v/t39.30808-6/435780793_1205054154200507_8900370005663696973_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=C0zDzrAqFw8Q7kNvgFnb8vT&_nc_ht=scontent.flju2-4.fna&oh=00_AYCKN0eIx1DHzTa0andHLLlnZTLvbdAtaVgwv95ivkkAWQ&oe=66CE3DA0"
+          alt="Full Width Logo"
+        />
+        <!-- Small logo -->
+      </div>
+      <img
+        class="small-logo"
+        src="https://www.manever.si/wp-content/uploads/2014/11/logo-manever.png.webp"
+        alt="Small Logo"
+      />
+
+      <input type="checkbox" id="active" />
+      <label for="active" class="menu-btn"><span></span></label>
+      <div class="wrapper">
+        <div class="logo-container">
+          <img
+            src="https://www.manever.si/wp-content/uploads/2014/11/logo-manever.png.webp"
+            alt=""
+          />
+        </div>
+
+        <ul>
+          <li><a href="index.html">Storitve</a></li>
+          <li><a href="contact.html">Kontakt</a></li>
+          <li><a href="about.html">O podjetju</a></li>
+          <li><a href="contract.html">Pogodbeno sodelovanje</a></li>
+          <li><a href="cenik.html">Cenik - Najem</a></li>
+          <li><a href="narocilo.html">Narocilo</a></li>
+        </ul>
+      </div>
+      <div class="info-container">
+        <div class="info">
+          <h3>Kontakt</h3>
+          <p>Manever d.o.o</p>
+          <p />
+          <p>Vodovodna ulica 20</p>
+          <p>SI - 2000 Maribor</p>
+        </div>
+        <div class="info">
+          <p>T (02) 720 78 38</p>
+          <p>T (02) 720 78 46</p>
+          <p>F (02) 720 78 39</p>
+          <p>G 040 415 408</p>
+        </div>
+        <div class="info">
+          <p>info@manever.si</p>
+          <p>skype: manever.logistika</p>
+        </div>
+        <div class="info">
+          <h3>Delovni Čas</h3>
+          <p>pon–pet: od 9:00 do 17:00</p>
+          <p>sob: od 8:00 do 12:00</p>
+        </div>
+      </div>
+
+      <div class="rotating-container">
+        <div class="image-container" style="--q: 9">
+          <span style="--i: 1">
+            <img
+              src="https://www.manever.si/wp-content/uploads/2023/03/Izdelek-brez-naslova-257x300.png.webp"
+            />
+            <div class="text">
+              <h3>Najem potniških kombijev.</h3>
+            </div>
+          </span>
+
+          <span style="--i: 2">
+            <img
+              src="https://www.manever.si/wp-content/uploads/2023/03/Izdelek-brez-naslova-1-257x300.png.webp"
+            />
+            <div class="text">
+              <h3>Najem tovornih kombijev.</h3>
+            </div>
+          </span>
+
+          <span style="--i: 3">
+            <img
+              src="https://www.manever.si/wp-content/uploads/2024/04/selitveni-servis.png.webp"
+            />
+            <div class="text">
+              <h3>Selitve</h3>
+            </div>
+          </span>
+
+          <span style="--i: 4">
+            <img
+              src="https://www.manever.si/wp-content/uploads/2024/04/dostavno-vozilo-najem.png.webp"
+            />
+            <div class="text">
+              <h3>Najem osebnega ali dostavnega vozila</h3>
+            </div>
+          </span>
+
+          <span style="--i: 5">
+            <img
+              src="https://www.manever.si/wp-content/uploads/2024/04/Distribucija-prodaja.png.webp"
+            />
+            <div class="text">
+              <h3>Distribucija in skladiščenje</h3>
+            </div>
+          </span>
+
+          <span style="--i: 6">
+            <img
+              src="https://www.manever.si/wp-content/uploads/2024/04/marketing-prodaja.png.webp"
+            />
+
+            <div class="text">
+              <h3>Marketing in prodaja</h3>
+            </div>
+          </span>
+
+          <span style="--i: 7">
+            <img
+              src="https://www.manever.si/wp-content/uploads/2023/03/6-257x300.png.webp"
+            />
+
+            <div class="text">
+              <h3>Marketing in prodaja</h3>
+            </div>
+          </span>
+
+          <span style="--i: 8">
+            <img
+              src="https://www.manever.si/wp-content/uploads/2023/03/6-257x300.png.webp"
+            />
+
+            <div class="text">
+              <h3>Marketing in prodaja</h3>
+            </div>
+          </span>
+        </div>
+      </div>
+
+      <header>
+        <h1>Storitve</h1>
+      </header>
+
+      <section class="storitve-container">
+        <div class="storitev-info">
+          <h2>Najem potniškega kombija</h2>
+          <img
+            src="https://www.manever.si/wp-content/uploads/2023/03/Izdelek-brez-naslova-257x300.png.webp"
+          />
+          <h3>Najem potniških kombijev.</h3>
+          <p>
+            Na voljo so vam potniški kombiji novejših letnikov z od 6 do devet
+            sedežev.
+          </p>
+        </div>
+        <div class="storitev-info">
+          <h2>Najem tovornega kombija</h2>
+          <img
+            src="https://www.manever.si/wp-content/uploads/2023/03/Izdelek-brez-naslova-1-257x300.png.webp"
+          />
+          <h3>Najem tovornih kombijev.</h3>
+          <p>
+            Ponujamo vam najem tovornih kombijev različnih velikosti – tudi tako
+            imenovan trikrat podaljšan (L4 H3).
+          </p>
+        </div>
+        <div class="storitev-info need-spacing">
+          <h2>Možnost najema selitve</h2>
+          <img
+            src="https://www.manever.si/wp-content/uploads/2024/04/selitveni-servis.png.webp"
+          />
+          <h3>Selitve</h3>
+          <p>
+            Opravljamo selitve iz poslovnih prostorov ali pomoč pri selitvi iz
+            stanovanja ali hiše. Odločite se za selitev brez glavobola,
+          </p>
+        </div>
+        <div class="storitev-info">
+          <h2>Najem osebnega vozila</h2>
+          <img
+            src="https://www.manever.si/wp-content/uploads/2024/04/dostavno-vozilo-najem.png.webp"
+          />
+          <h3>Najem osebnega ali dostavnega vozila</h3>
+          <p>Na voljo so vam dostavna vozila novejših letnikov</p>
+        </div>
+        <div class="storitev-info">
+          <h2>Distribucija in skladiščenje</h2>
+          <img
+            src="https://www.manever.si/wp-content/uploads/2024/04/Distribucija-prodaja.png.webp"
+          />
+          <h3>Distribucija in skladiščenje</h3>
+          <p>
+            Zagotavljamo zanesljivo, hitro in učinkovito upravljanje z vašimi
+            izdelki od vhodnih vrat skladišča do končnega potrošnika.
+          </p>
+        </div>
+        <div class="storitev-info">
+          <h2>Marketing in prodaja</h2>
+          <img
+            src="https://www.manever.si/wp-content/uploads/2024/04/marketing-prodaja.png.webp"
+          />
+          <h3>Marketing in prodaja</h3>
+          <p>
+            Obiščite spletno stran Digitalnega Manevra. Pomoc v prodaji in
+            marketingu za mala in srednja podjetja.
+          </p>
+        </div>
+        <div class="storitev-info">
+          <h2>Prevoz tovora - kompletni prevoz</h2>
+          <img
+            src="https://www.manever.si/wp-content/uploads/2023/03/6-257x300.png.webp"
+          />
+          <p>
+            Za prevoz industrijskega tovora, bodisi paletiziranega ali pa ne,
+            svetujemo kompleten prevoz tovora.
+          </p>
+        </div>
+        <div class="storitev-info">
+          <h2>Prevoz tovora - zbirnih tovorov</h2>
+          <img
+            src="https://www.manever.si/wp-content/uploads/2023/03/6-257x300.png.webp"
+          />
+
+          <p>
+            Z našimi solo kamioni dolžine 6m in nosilnosti 5t vam robo z zbirnim
+            tovorom prav tako dostavimo naslednji dan
+          </p>
+        </div>
+        <div class="storitev-info">
+          <h2>Prevoz tovora - s kombijem</h2>
+          <img
+            src="https://www.manever.si/wp-content/uploads/2023/03/6-257x300.png.webp"
+          />
+
+          <p>
+            Za prevoz manjših ali ekspresnih pošiljk vam ponujamo kombi prevoz s
+            kombiji iz naše flote.
+          </p>
+        </div>
+      </section>
+
+      <section class="storitve-prevoz">
+        <!-- Container for .tekst-prevoz -->
+        <div class="container-prevoz">
+          <div class="tekst-prevoz">
+            <header>
+              Prevoz tovora, selitveni servis in najem vozila, potniskega
+              kombija ali tovornega kombija
+            </header>
+            <p>
+              Na spletni strani vam nudimo vpogled v naše podjetje, ki se
+              ukvarja s prevozi tovora in potnikov v cestnem prometu, naš
+              izkušen, ambiciozen in prijazen tim pa vam lahko ponudi tudi
+              rešitve povezane s skladiščenjem, selitvami (za pravne in fizične
+              osebe- selitveni servis) in najem kombija. V ponudbi imamo tovorne
+              in potniške kombije.
+            </p>
+          </div>
+          <div class="tekst-prevoz">
+            <p>
+              Celovite storitve s področja logistike in transporta zaokrožujejo
+              storitve računovodstva, kar lahko s pridom izkoristijo tudi naši
+              podprevozniki, saj smo se po tej plati poglobili v vse specifike
+              povezane s transportom. Pokličite nas, da se pogovorimo o
+              možnostih sodelovanja in kako vam lahko pomagamo.
+            </p>
+          </div>
+          <div class="tekst-prevoz">
+            <p>
+              Pokličite nas in z veseljem vam najdemo optimalno rešitev za vaše
+              logistične izzive. Na voljo smo vam 24 ur na dan, vsak dan.
+              Poskrbimo, da bo vaš tovor prispel varno in pravočasno na svoj
+              cilj.
+            </p>
+          </div>
+        </div>
+
+        <!-- Container for .tekst-pomoc -->
+        <div class="container-pomoc">
+          <div class="tekst-pomoc">
+            <header>
+              Karkoli potrebujete v zvezi z vašo dragoceno pošiljko – mi vam
+              lahko pomagamo!
+            </header>
+            <p>
+              Smo izkušena ekipa disponentov in preverjenih voznikov, ki
+              poskrbi, da vaše blago prispe na cilj hitro in varno.
+            </p>
+          </div>
+          <div class="tekst-pomoc">
+            <p>
+              Pokličite nas na 040 415 408 ali izpolnite obrazec za
+              povpraševanje.
+            </p>
+          </div>
+          <div class="tekst-pomoc">
+            <p>
+              Nudimo tudi najem tovornih kombijev po ugodnih cenah za Slovenijo
+              in tujino. Prav tako pa vas hitro in profesionalno preselimo v
+              novo nepremičnino s našimi selitvenimi storitvami. Oglejte si še
+              ostale možnosti sodelovanja z našim podjetjem. Veseli bomo vašega
+              povpraševanja!
+            </p>
+          </div>
+          <div class="tekst-pomoc">
+            <p>Obiščite našo Facebook stran!</p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="custom-footer">
+        <!-- Contact Information -->
+        <div class="footer-section contact-info">
+          <h3>Kontakt</h3>
+          <p>Manever d.o.o</p>
+          <p>Vodovodna ulica 20</p>
+          <p>SI – 2000 Maribor</p>
+          <p>T (02) 720 78 38</p>
+          <p>T (02) 720 78 46</p>
+          <p>F (02) 720 78 39</p>
+          <p>G 040 415 408</p>
+          <p>info@manever.si</p>
+          <p>skype: manever.logistika</p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="footer-section links">
+          <h3>POVEZAVE</h3>
+          <p>Storitve</p>
+          <p>Kontakt</p>
+          <p>O podjetju</p>
+          <p>Pogodbeno sodelovanje</p>
+          <p>Cenik – najem kombija</p>
+        </div>
+
+        <!-- Working Hours Section -->
+        <div class="footer-section working-hours">
+          <h3>Delovni čas</h3>
+          <p>pon–pet: od 9:00 do 17:00</p>
+          <p>sob: od 8:00 do 12:00</p>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="footer-section social-media">
+          <h3>Follow Us</h3>
+          <a href="#" class="social-icon">
+            <i class="fab fa-facebook"></i>
+            <!-- Facebook Icon -->
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-instagram"></i>
+            <!-- Instagram Icon -->
+          </a>
+        </div>
+      </footer>
+    </body>
+  </head>
+</html>

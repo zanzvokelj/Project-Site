@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <title>Animated Nav With GSAP 3.0</title>
+    <link rel="stylesheet" href="style.css" />
+    <head>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+        rel="stylesheet"
+      />
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+      <div class="logo-banner">
+        <img
+          src="https://scontent.flju2-4.fna.fbcdn.net/v/t39.30808-6/435780793_1205054154200507_8900370005663696973_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_ohc=C0zDzrAqFw8Q7kNvgFnb8vT&_nc_ht=scontent.flju2-4.fna&oh=00_AYCKN0eIx1DHzTa0andHLLlnZTLvbdAtaVgwv95ivkkAWQ&oe=66CE3DA0"
+          alt="Full Width Logo"
+        />
+        <!-- Small logo -->
+      </div>
+      <img
+        class="small-logo"
+        src="https://www.manever.si/wp-content/uploads/2014/11/logo-manever.png.webp"
+        alt="Small Logo"
+      />
+
+      <input type="checkbox" id="active" />
+      <label for="active" class="menu-btn"><span></span></label>
+      <div class="wrapper">
+        <div class="logo-container">
+          <img
+            src="https://www.manever.si/wp-content/uploads/2014/11/logo-manever.png.webp"
+            alt=""
+          />
+        </div>
+
+        <ul>
+            <li><a href="index.html">Storitve</a></li>
+            <li><a href="contact.html">Kontakt</a></li>
+            <li><a href="about.html">O podjetju</a></li>
+            <li><a href="contract.html">Pogodbeno sodelovanje</a></li>
+            <li><a href="cenik.html">Cenik - Najem</a></li>
+            <li><a href="narocilo.html">Narocilo</a></li>
+        </ul>
+      </div>
+
+      <div class="info-container">
+        <div class="info">
+          <h3>Kontakt</h3>
+          <p>Manever d.o.o</p>
+          <p />
+          <p>Vodovodna ulica 20</p>
+          <p>SI - 2000 Maribor</p>
+        </div>
+        <div class="info">
+          <p>T (02) 720 78 38</p>
+          <p>T (02) 720 78 46</p>
+          <p>F (02) 720 78 39</p>
+          <p>G 040 415 408</p>
+        </div>
+        <div class="info">
+          <p>info@manever.si</p>
+          <p>skype: manever.logistika</p>
+        </div>
+        <div class="info">
+          <h3>Delovni Čas</h3>
+          <p>pon–pet: od 9:00 do 17:00</p>
+          <p>sob: od 8:00 do 12:00</p>
+        </div>
+      </div>
+
+      <section class="about-container">
+        <div class="about-tekst">
+          <h2>
+            O podjetju <span class="manever">M</span>a<span class="manever"
+              >never</span
+            >
+          </h2>
+          <p>
+            Podjetje Manever d.o.o. je nastalo leta 2006 kot rezultat ideje
+            lastnika, da bi združili manjše prevoznike v enotno močno skupino,
+            ter bi skupaj z njihovim ter lastnim prevoznim parkom strankam
+            ponudili kar se da raznovrstno paleto prevoznih možnosti.
+          </p>
+          <p>
+            Pokličite nas na 040 415 408 ali pošljite mail na info@manever.si.
+          </p>
+          <p>
+            To pomeni, da smo prisotni v vseh državah Evrope z možnostjo prevoza
+            tovora od najmanjšega paketa pa vse do kompletnih pošiljk, prav tako
+            pa organiziramo prevoze tovora izrednih dimenzij.
+          </p>
+          <ul>
+            <li>prevoz tovora – kompletni prevoz</li>
+            <li>prevoz tovora – zbirnik</li>
+            <li>kombi prevoz tovora</li>
+            <li>poslovni prevozi – poslovni najem kombija</li>
+            <li>skladiščenje</li>
+          </ul>
+        </div>
+
+        <div class="about-img">
+          <img src="https://i.gyazo.com/a223f664dda2c2ff4c6aa5e84ea3ab06.png" />
+
+          <button class="btn-about">Naroči me!</button>
+        </div>
+      </section>
+
+      <div class="about-images">
+        <div class="large-image">
+          <img
+            class="item-1"
+            src="https://i.gyazo.com/0822e4d2949c886c7d7ab88d0e6c3592.png"
+          />
+        </div>
+      </div>
+
+      <div class="about-text">
+        <p>
+          Naše storitve smo sčasoma dopolnjevali še z dodatnimi storitvami, ki
+          smo jih leta 2013 prenesli na novoustanovljeno podjetje Karus d.o.o.,
+          kjer poleg prevozov nudimo še storitve selitev, skladiščenje, izposojo
+          vozil, računovodske storitve in storitve digitalnega marketinga.
+        </p>
+
+        <p>
+          Več o storitvah digitalnega marketinga (upravljanje družbenih omrežij,
+          optimizacija spletnih strani SEO, Google Ads oglaševanje, izdelava
+          spletnih strani,…) si lahko preberete na spletni strani
+          digitalni.manever.si
+        </p>
+
+        <p>
+          Naj izpostavimo še storitev poslovnih prevozov, poslovneže udobno
+          pripeljemo na sestanek in to kjerkoli v EU. Tako dolga in naporna
+          vožnja ni več vaša skrb, na sestanek pridete spočiti, hkrati pa lahko
+          med vožnjo opravite tudi druge stvari, morda se celo pripravite na sam
+          sestanek.
+        </p>
+
+        <p>Obiščite našo Facebook stran.</p>
+      </div>
+
+      <div class="steps-container">
+        <h1>Kako poteka izposoja kombija?</h1>
+        <p>
+          Za vaše naslednje potovanje izberite
+          <span class="manever">M</span>a<span class="manever">never</span> in
+          doživite brezskrbnost vsakega trenutka na cesti.
+        </p>
+
+        <div class="steps-content">
+          <div class="steps-image">
+            <img
+              src="https://scontent.flju2-3.fna.fbcdn.net/v/t39.30808-6/386555099_1078209036885020_9042283383680465974_n.jpg?stp=cp6_dst-jpg&_nc_cat=103&ccb=1-7&_nc_sid=833d8c&_nc_ohc=ONAN8GtyoJMQ7kNvgHOEOZt&_nc_ht=scontent.flju2-3.fna&oh=00_AYAMYpFly9vGeRcpwhfDB9qr6yM6vVCzzRPjF1xUa6UpRw&oe=66D23A8A"
+              alt="Motorhome interior"
+            />
+          </div>
+
+          <div class="steps-container-two">
+            <div class="step">
+              <span class="step-number">1.</span> Izberite vozilo in pogoje
+              najema. Pošljite povpraševanje in pripravili bomo želeno ponudbo
+              za vas.
+            </div>
+            <div class="step">
+              <span class="step-number">2.</span> Pred prevzemom je potrebno
+              plačati varščino (znesek varščine je odvisen od vrste vozila).
+            </div>
+            <div class="step">
+              <span class="step-number">3.</span> Pred odhodom sledi ogled in
+              predstavitev kombija. Skupaj uredimo najemno pogodbo, izročimo
+              dokumente in pregledamo opremo avtodoma.
+            </div>
+            <div class="step">
+              <span class="step-number">4.</span> Sledi vasa brezskrbna pot.
+            </div>
+            <div class="step">
+              <span class="step-number">5.</span> Kombi vrnete na dogovorjeni
+              dan ob dogovorjenem času. Skupaj pregledamo vozilo, in če je vse v
+              redu, vam varščino vrnemo na račun v roku 5 delovnih dni.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer class="custom-footer">
+        <!-- Contact Information -->
+        <div class="footer-section contact-info">
+          <h3>Kontakt</h3>
+          <p>Manever d.o.o</p>
+          <p>Vodovodna ulica 20</p>
+          <p>SI – 2000 Maribor</p>
+          <p>T (02) 720 78 38</p>
+          <p>T (02) 720 78 46</p>
+          <p>F (02) 720 78 39</p>
+          <p>G 040 415 408</p>
+          <p>info@manever.si</p>
+          <p>skype: manever.logistika</p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="footer-section links">
+          <h3>POVEZAVE</h3>
+          <p>Storitve</p>
+          <p>Kontakt</p>
+          <p>O podjetju</p>
+          <p>Pogodbeno sodelovanje</p>
+          <p>Cenik – najem kombija</p>
+        </div>
+
+        <!-- Working Hours Section -->
+        <div class="footer-section working-hours">
+          <h3>Delovni čas</h3>
+          <p>pon–pet: od 9:00 do 17:00</p>
+          <p>sob: od 8:00 do 12:00</p>
+        </div>
+
+        <!-- Social Media Section -->
+        <div class="footer-section social-media">
+          <h3>Follow Us</h3>
+          <a href="#" class="social-icon">
+            <i class="fab fa-facebook"></i>
+            <!-- Facebook Icon -->
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-instagram"></i>
+            <!-- Instagram Icon -->
+          </a>
+        </div>
+      </footer>
+    </body>
+  </head>
+</html>
