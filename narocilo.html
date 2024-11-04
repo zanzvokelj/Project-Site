@@ -98,24 +98,18 @@
       <div class="card">
         <div class="card-image"></div>
         <div class="card-form">
-            <form>
-                <input type="text" placeholder="Ime in Priimek" required>
-                <input type="text" placeholder="Kontaktna Stevilka" required>
-                <input type="text" placeholder="Email" required>
-                <input type="text" placeholder="Najem Ali Selitev?" required>
-                
-        
-                
-        
-                
-                <input type="date" id="start-date" name="start-date" placeholder="Start Date">
-                <input type="date" id="end-date" name="end-date" placeholder="End Date">
-                
-                <p>Opombe?</p>
-                <textarea id="large-text-input" name="opombe" placeholder="Type your text here..."></textarea>
-                
-                <button type="submit" class="submit-btn">Submit</button>
-            </form>
+          <form action="submit_order.php" method="post">
+            <input type="text" name="name" placeholder="Ime in Priimek" required>
+            <input type="text" name="contactNumber" placeholder="Kontaktna Stevilka" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="text" name="serviceType" placeholder="Najem Ali Selitev?" required>
+            <input type="date" name="startDate" placeholder="Start Date">
+            <input type="date" name="endDate" placeholder="End Date">
+            <textarea name="notes" placeholder="Opombe?"></textarea>
+            <button type="submit" class="submit-btn">Submit</button>
+
+
+        </form>
         </div>
     </div>
 
